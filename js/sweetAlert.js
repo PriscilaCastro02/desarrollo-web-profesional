@@ -28,7 +28,7 @@ function Registro(){
             title: '¡Registro exitoso!'
           })
           //await sleep(3200);
-          //indow.location.replace("../xd.html");
+          //indow.location.replace("../file.html");
     }
     }
 
