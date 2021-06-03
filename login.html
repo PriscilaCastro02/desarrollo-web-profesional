@@ -70,7 +70,6 @@
                  <strong>Registro</strong>
                </a>
                <a class="button is-light" href="login.html"> Iniciar sesión </a>
-
              </div>
            </div>
          </div>
@@ -85,51 +84,31 @@
  <!-- DO NOT EDIT THIS PART!! -->
       <br><br><br><br><br>
       <div class="control">
-        <h1 class="title is-3 has-text-centered has-text-primary">¿Te interesan nuestros servicios?</h1>
-        <h1 class="title is-5 has-text-centered has-text-dark">¿Tienes alguna duda o comentario?</h1>
+        <h1 class="title is-3 has-text-centered has-text-primary">Iniciar sesión</h1>
 
-        <form action="" name="registro" class="" id="formulario" onsubmit="return Contacto()">
+        <form action="" name="registro" class="field" id="formulario" onsubmit="">
+          <!-- Grupo: Usuario -->
+          <div class="control" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Usuario</label>
+              <input type="text" class="input" name="usuario" id="usuario" placeholder="">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
 
-          <!-- Grupo: Nombre -->
-          <div class="field" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Nombre</label>
-            <div class="formulario__grupo-input">
-              <input type="text" class="input" name="nombre" id="nombre" placeholder="">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-  
-          </div>
     
+          <!-- Grupo: Contraseña -->
+          <div class="control" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+              <input type="password" class="input" name="password" id="password">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <br><br>
 
-          <!-- Grupo: Correo Electronico -->
-          <div class="field" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo Electrónico</label>
-            <div class="formulario__grupo-input">
-              <input type="email" class="input" name="correo" id="correo" placeholder="correo@correo.com">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-          </div>
-    
-          <!-- Grupo: Teléfono -->
-          <div class="field" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Teléfono</label>
-            <div class="formulario__grupo-input">
-              <input type="text" class="input" name="telefono" id="telefono" placeholder="4491234567">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-          </div>
-    
             <div class="buttons">
-              <button type="submit"  class="button is-primary is-medium is-fullwidth">Enviar</button>
-            <!-- 
-              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Registro exitoso!</p>
-             -->
+              <button type="submit"  class="button is-primary is-medium is-fullwidth">Ingresar</button>
           </div>
         </form>
       </div>
-<!--  -->
+
       <!-- END GRID 10 -->
 <!-- DO NOT EDIT THIS PART!! -->
     </div>

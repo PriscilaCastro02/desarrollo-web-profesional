@@ -33,4 +33,33 @@ function Registro(){
     }
 
 
-        
+    function Contacto(){
+
+        var name = document.forms['registro']['nombre'].value;
+        var email = document.forms['registro']['correo'].value;
+        var phone = document.forms['registro']['telefono'].value;
+    
+    
+        if(name==null || name=="" || email==null || email=="" || phone==null || phone==""){
+            console.log('XD');
+        }else{
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              Toast.fire({
+                icon: 'success',
+                title: '¡Mensaje enviado!'
+              })
+        }
+        }
+    
+    
+            
